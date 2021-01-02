@@ -1,7 +1,10 @@
-import { combineReducers } from 'redux';
+// Incorporar el reducer en el listado de reducers
+
+import { combineReducers } from "redux";
+import { showUsers } from "./users";
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  user: showUsers,
 });
 
 export default rootReducer;
